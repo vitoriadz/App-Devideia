@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#605E6C"
     tools:context=".MainActivity">
 
-    <Button
+    <EditText
+        android:orientation="vertical"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#383549"
-        android:shadowColor="#383549"
-        android:shadowRadius="10"
-        android:text="Digite algo..."
-        android:shape="rectangle"
+        android:background="@drawable/botao_editavel"
+        android:padding="20dp"
         android:radius="2000dp"
+        android:shadowColor="#272727"
+        android:shadowRadius="20"
+        android:text="Digite algo..."
         android:textAllCaps="false"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
