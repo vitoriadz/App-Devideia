@@ -15,8 +15,8 @@
         app:ignore="MissingConstraints">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/backbutton"
             android:scaleType="centerCrop" />
 
@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:text="Projeto recente"
                     android:textColor="#fff"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/proximanovabold"
                     android:paddingBottom="16sp"
                     android:paddingTop="16sp"/>
@@ -59,6 +59,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="270dp"
                         android:src="@drawable/projeto3"
+                        android:adjustViewBounds="true"
                         android:scaleType="centerCrop"
                         android:background="#8E9EAB" />
 
@@ -75,7 +76,7 @@
                             android:layout_height="wrap_content"
                             android:text="Meu Projeto 3"
                             android:textColor="#FFF"
-                            android:textSize="24sp"
+                            android:textSize="20sp"
                             android:fontFamily="@font/proximanovabold"/>
 
                         <TextView
@@ -90,19 +91,36 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Projetos anteriores"
-                    android:textColor="#fff"
-                    android:textSize="24sp"
-                    android:fontFamily="@font/proximanovabold"
-                    android:paddingBottom="16sp"
-                    android:paddingTop="16sp"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanovabold"
+                        android:paddingTop="16sp"
+                        android:paddingBottom="16sp"
+                        android:text="Projetos anteriores"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mais"
+                        android:textColor="#fff"
+                        android:paddingLeft="100dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/proximanovabold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal"
                     android:padding="10dp">
 
@@ -117,7 +135,6 @@
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="12dp"
                             android:padding="16dp">
-
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="170dp"
