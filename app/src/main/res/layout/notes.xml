@@ -9,9 +9,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/background"
+        android:background="@drawable/darkbackground"
         android:padding="16dp"
         tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/botaovoltar"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/botaosalvar"
+                android:paddingLeft="0dp"/>
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,7 +50,7 @@
             android:textSize="35sp"
             android:fontFamily="@font/proximanovaregular"
             android:paddingBottom="5sp"
-            android:paddingTop="80sp"
+            android:paddingTop="50sp"
             android:paddingLeft="10sp"/>
 
         <TextView
@@ -32,15 +61,6 @@
             android:textSize="17sp"
             android:fontFamily="@font/proximanovaregular"
             android:paddingLeft="25sp"/>
-
-        <View
-            android:id="@+id/container_header"
-            android:layout_width="411dp"
-            android:layout_height="78dp"
-            android:background="@drawable/botao_voltar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
