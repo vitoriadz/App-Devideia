@@ -4,12 +4,147 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite algo... "
-        android:orientation="horizontal"/>
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20sp"
+             android:layout_marginLeft="10sp"
+             android:fontFamily="@font/proximanovaregular"
+             android:text="@string/Voltar"
+             android:background="@drawable/buttonsmood"
+             android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/buttonsmood"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="@string/Salvar"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/moredya"
+            android:text="Moodboard"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20sp"
+            android:src="@drawable/grande" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="50dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20sp"
+                android:src="@drawable/pequeno1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20sp"
+                android:src="@drawable/pequeno2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle1"
+                android:contentDescription="@string/Salvar"
+                android:padding="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle2"
+                android:contentDescription="@string/Salvar"
+                android:padding="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle3"
+                android:contentDescription="@string/Salvar"
+                android:padding="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/proximanovaregular"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:text="Digite algo..."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </LinearLayout>
