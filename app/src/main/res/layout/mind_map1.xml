@@ -2,90 +2,164 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#605E6C"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:src="@drawable/voltar" />
 
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="73dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:src="@drawable/Arrow3" />
+            android:src="@drawable/check" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="100dp"
+        android:layout_weight="80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_editavel"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:radius="2000dp"
+            android:shadowColor="#272727"
+            android:shadowRadius="20"
+            android:text="www.ifce/fortaleza.com"
+            android:textAllCaps="false"
+            android:textColor="#fff"/>
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="54dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:src="@drawable/Arrow4" />
 
+        <EditText
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_editavel"
+            android:fontFamily="@font/proximanovaregular"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:radius="2000dp"
+            android:shadowColor="#272727"
+            android:shadowRadius="20"
+            android:text="Novo tópico"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:src="@drawable/Arrow2" />
+        <EditText
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_editavel"
+            android:fontFamily="@font/proximanovaregular"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:radius="2000dp"
+            android:shadowColor="#272727"
+            android:shadowRadius="20"
+            android:text="Digite algo..."
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/Arrow3" />
+        <EditText
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_editavel"
+            android:fontFamily="@font/proximanovaregular"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:radius="2000dp"
+            android:shadowColor="#272727"
+            android:shadowRadius="20"
+            android:text="Título"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:src="@drawable/add" />
-
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="135dp"
-        android:layout_marginTop="362dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="160dp"
-        android:background="@drawable/botao_editavel"
-        android:fontFamily="@font/proximanovaregular"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="20dp"
-        android:radius="2000dp"
-        android:shadowColor="#272727"
-        android:shadowRadius="20"
-        android:text="Digite algo..."
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
 
 
 </LinearLayout>
