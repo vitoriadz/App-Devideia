@@ -15,32 +15,32 @@
         android:orientation="horizontal"
         tools:ignore="ExtraText">
 
-        <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="20sp"
-             android:layout_marginLeft="10sp"
-             android:fontFamily="@font/proximanovaregular"
-             android:text="@string/Voltar"
-             android:background="@drawable/buttonsmood"
-             android:textColor="@color/white"
-            android:layout_weight="1"/>
+        <ImageButton
+            android:background="@drawable/buttonsmood"
+            android:layout_width="20sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/voltar"
+            android:contentDescription="Botão Voltar"
+            android:layout_weight="1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="10"/>
+            android:layout_weight="8"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:background="@drawable/buttonsmood"
+            android:layout_width="20sp"
+            android:layout_height="50sp"
             android:layout_marginTop="20sp"
             android:layout_marginRight="10sp"
-            android:background="@drawable/buttonsmood"
-            android:fontFamily="@font/proximanovaregular"
-            android:text="@string/Salvar"
-            android:textColor="@color/white"
-            android:layout_weight="1"/>/>
+            android:src="@drawable/salvar"
+            android:contentDescription="Botão Voltar"
+            android:layout_weight="1"
+            />
     </LinearLayout>
 
     <LinearLayout
