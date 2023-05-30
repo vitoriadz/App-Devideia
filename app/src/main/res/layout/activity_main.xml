@@ -6,37 +6,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity"
     android:background="@drawable/fundo">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="50dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/button_voltar">
+        
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/voltar">
+        </ImageButton>
+
+    </FrameLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp">
+        android:paddingHorizontal="5dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <View
+            <FrameLayout
                 android:layout_width="260dp"
                 android:layout_height="520dp"
-                android:background="#383549"
-                android:layout_marginEnd="24dp"/>
-
-            <View
-                android:layout_width="260dp"
-                android:layout_height="520dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
-                android:background="#383549" />
+                android:background="#383549">
 
-            <View
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mindmap"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
                 android:layout_width="260dp"
                 android:layout_height="520dp"
-                android:background="#383549"
-                android:layout_marginEnd="24dp"/>
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#383549">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/moodboard"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="520dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="#383549">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/iconadd"></ImageView>
+            </FrameLayout>
 
         </LinearLayout>
     </HorizontalScrollView>
