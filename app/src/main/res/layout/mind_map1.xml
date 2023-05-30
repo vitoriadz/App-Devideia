@@ -9,25 +9,30 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="152dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="1"
             android:src="@drawable/voltar" />
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_weight="55" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
             android:src="@drawable/check" />
 
 
@@ -35,56 +40,55 @@
 
 
     <LinearLayout
-        android:padding="100dp"
-        android:layout_weight="80"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="80"
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/button"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botao_editavel"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:radius="2000dp"
+            android:shadowColor="#272727"
+            android:shadowRadius="20"
+            android:text="www.ifce/fortaleza.com"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/Arrow4" />
+
+        <EditText
+            android:id="@+id/button"
+            android:layout_width="147dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/botao_editavel"
+            android:fontFamily="@font/proximanovaregular"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="10dp"
             android:radius="2000dp"
             android:shadowColor="#272727"
             android:shadowRadius="20"
-            android:text="www.ifce/fortaleza.com"
-            android:textAllCaps="false"
-            android:textColor="#fff"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:src="@drawable/Arrow4" />
-
-        <EditText
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/botao_editavel"
-            android:fontFamily="@font/proximanovaregular"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="20dp"
-            android:radius="2000dp"
-            android:shadowColor="#272727"
-            android:shadowRadius="20"
             android:text="Novo tópico"
             android:textAllCaps="false"
-            android:textColor="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499" />
+            android:textColor="#fff" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -92,11 +96,17 @@
             android:layout_gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
             android:src="@drawable/Arrow2" />
+
         <EditText
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/botao_editavel"
             android:fontFamily="@font/proximanovaregular"
             android:gravity="center"
@@ -107,25 +117,22 @@
             android:shadowRadius="20"
             android:text="Digite algo..."
             android:textAllCaps="false"
-            android:textColor="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499" />
+            android:textColor="#fff" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
             android:src="@drawable/Arrow3" />
+
         <EditText
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/botao_editavel"
+            android:layout_width="109dp"
+            android:layout_height="79dp"
+            android:background="@drawable/botao_editavel2"
             android:fontFamily="@font/proximanovaregular"
             android:gravity="center"
             android:orientation="horizontal"
@@ -136,12 +143,7 @@
             android:text="Título"
             android:textAllCaps="false"
             android:textColor="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499" />
+            android:layout_marginLeft="143dp"/>
 
     </LinearLayout>
 
@@ -152,12 +154,13 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="318dp"
+            android:layout_height="97dp"
             android:layout_gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:src="@drawable/add" />
+            android:layout_marginLeft="130dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/Group_text" />
     </LinearLayout>
 
 
