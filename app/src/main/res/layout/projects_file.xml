@@ -27,7 +27,7 @@
             android:textColor="#fff"
             android:textAlignment="center"
             android:textSize="32sp"
-            android:fontFamily="@font/Moredya"/>
+            android:fontFamily="@font/moredya"/>
 
         <LinearLayout
             android:layout_width="match_parent"
