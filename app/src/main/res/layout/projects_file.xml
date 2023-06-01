@@ -15,8 +15,6 @@
         app:ignore="MissingConstraints">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
             android:src="@drawable/backbutton"
             android:scaleType="centerCrop" />
 
@@ -45,6 +43,7 @@
                     android:layout_height="wrap_content"
                     android:text="Projeto recente"
                     android:textColor="#fff"
+                    android:textSize="24sp"
                     android:textSize="20sp"
                     android:fontFamily="@font/proximanovabold"
                     android:paddingBottom="16sp"
@@ -91,6 +90,19 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projetos anteriores"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/proximanovabold"
+                    android:paddingBottom="16sp"
+                    android:paddingTop="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
