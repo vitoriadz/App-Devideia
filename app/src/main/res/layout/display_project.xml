@@ -13,7 +13,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@drawable/button_voltar"
-        android:src="@drawable/voltar"
+        android:src="@drawable/botao_voltar_display_project"
         android:layout_marginVertical="50dp"
         android:layout_marginLeft="24dp"
         android:contentDescription="voltar">
