@@ -10,14 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/background"
-        android:padding="16dp"
-        app:ignore="MissingConstraints">
-
-        <ImageView
-            android:src="@drawable/backbutton"
-            android:scaleType="centerCrop" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
