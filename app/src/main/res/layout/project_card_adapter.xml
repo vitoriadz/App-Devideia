@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/ProjectCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_row="0"
+    android:layout_column="0"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="18dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/project_card"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/ProjectImage"
+                android:layout_width="147dp"
+                android:layout_height="95dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/projeto3" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="7dp">
+
+            <TextView
+                android:id="@+id/ProjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovabold"
+                android:text="Meu projeto 3"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ProjectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanovaregular"
+                android:text="Criado em 01/03/2023"
+                android:textAlignment="center"
+                android:textColor="@color/subtitle_project_card"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
