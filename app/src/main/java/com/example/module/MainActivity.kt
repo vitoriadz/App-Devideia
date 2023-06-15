@@ -3,15 +3,24 @@ package com.example.module
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.all_projects_file.*
+import com.example.module.databinding.ActivityMainBinding
+import com.example.module.databinding.AllProjectsFileBinding
+
+//import kotlinx.android.synthetic.main.all_projects_file.*
 
 class MainActivity : AppCompatActivity() {
+
+    private  lateinit var binding: ActivityMainBinding
 
     private lateinit var projectCardAdapter: projectCardAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.all_projects_file)
+
+
+        binding = AllProjectsFileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         initRecycleView()
         addAllProjectsDatasource()
@@ -19,8 +28,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecycleView() {
         this.projectCardAdapter = projectCardAdapter()
-        AllProjectsRecycleView.layoutManager = LinearLayoutManager(this@MainActivity)
-        AllProjectsRecycleView.adapter = this.projectCardAdapter
+
+        binding.AllProjectsRecycleView.layoutManager = LinearLayoutManager(this@MainActivity)
+        binding.AllProjectsRecycleView.adapter = this.projectCardAdapter
     }
 
     private fun addAllProjectsDatasource() {
