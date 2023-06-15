@@ -1,4 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="10dp" /> <!-- Define o raio do arredondamento das bordas -->
-    <solid android:color="@color/project_card" /> <!-- Define a cor de preenchimento do ImageView -->
-</shape>

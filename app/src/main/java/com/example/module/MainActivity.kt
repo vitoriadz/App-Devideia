@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var list: MutableList<Fragment> = ArrayList()
-        list.add(PageFragment())
+        list.add(PageFragment1())
         list.add(PageFragment2())
         list.add(PageFragment3())
 
