@@ -1,229 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/tools"
     app:ignore="NamespaceTypo">
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEUS PROJETOS"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:fontFamily="@font/Moredya"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SEUS PROJETOS"
-            android:textColor="#fff"
-            android:textAlignment="center"
-            android:textSize="32sp"
-            android:fontFamily="@font/moredya"/>
+        android:layout_marginTop="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projeto recente"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:fontFamily="@font/proximanovabold"
+                android:paddingBottom="16sp"
+                android:paddingTop="16sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:src="@drawable/projeto3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="#8E9EAB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#8E9EAB"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meu Projeto 3"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/proximanovabold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Projeto criado em 12 de maio de 2023"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/proximanovaregular"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projetos anteriores"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:fontFamily="@font/proximanovabold"
+                android:paddingBottom="16sp"
+                android:paddingTop="16sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Projeto recente"
-                    android:textColor="#fff"
-                    android:textSize="24sp"
-                    android:textSize="20sp"
                     android:fontFamily="@font/proximanovabold"
+                    android:paddingTop="16sp"
                     android:paddingBottom="16sp"
-                    android:paddingTop="16sp"/>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="12dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="270dp"
-                        android:src="@drawable/projeto3"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:background="#8E9EAB" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:background="#8E9EAB"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Meu Projeto 3"
-                            android:textColor="#FFF"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/proximanovabold"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Projeto criado em 12 de maio de 2023"
-                            android:textColor="#FFF"
-                            android:textSize="14sp"
-                            android:fontFamily="@font/proximanovaregular"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="Projetos anteriores"
                     android:textColor="#fff"
-                    android:textSize="24sp"
-                    android:fontFamily="@font/proximanovabold"
-                    android:paddingBottom="16sp"
-                    android:paddingTop="16sp"/>
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver mais"
+                    android:textColor="#fff"
+                    android:paddingLeft="100dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/proximanovabold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:layout_weight="1"
+                    android:paddingRight="8dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/proximanovabold"
-                        android:paddingTop="16sp"
-                        android:paddingBottom="16sp"
-                        android:text="Projetos anteriores"
-                        android:textColor="#fff"
-                        android:textSize="20sp" />
+                        app:cardCornerRadius="12dp"
+                        android:padding="16dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/projeto2"
+                            android:scaleType="centerCrop"
+                            android:background="#8E9EAB" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ver mais"
-                        android:textColor="#fff"
-                        android:paddingLeft="100dp"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/proximanovabold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:background="#8E9EAB"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Meu Projeto 2"
+                                android:textColor="#FFF"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/proximanovabold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Projeto criado em 1 de março 2023"
+                                android:textColor="#FFF"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/proximanovaregular"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="8dp">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingRight="8dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="12dp"
+                        android:padding="16dp">
 
-                        <androidx.cardview.widget.CardView
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/projeto1"
+                            android:scaleType="centerCrop"
+                            android:background="#8E9EAB" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardCornerRadius="12dp"
-                            android:padding="16dp">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="170dp"
-                                android:src="@drawable/projeto2"
-                                android:scaleType="centerCrop"
-                                android:background="#8E9EAB" />
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:background="#8E9EAB"
+                            android:orientation="vertical"
+                            android:padding="3dp">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:background="#8E9EAB"
-                                android:orientation="vertical"
-                                android:padding="3dp">
+                                android:text="Meu Projeto 1"
+                                android:textColor="#FFF"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/proximanovabold"/>
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Meu Projeto 2"
-                                    android:textColor="#FFF"
-                                    android:textSize="16sp"
-                                    android:fontFamily="@font/proximanovabold"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Projeto criado em 1 de março 2023"
-                                    android:textColor="#FFF"
-                                    android:textSize="12sp"
-                                    android:fontFamily="@font/proximanovaregular"/>
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingRight="8dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            app:cardCornerRadius="12dp"
-                            android:padding="16dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="170dp"
-                                android:src="@drawable/projeto1"
-                                android:scaleType="centerCrop"
-                                android:background="#8E9EAB" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:background="#8E9EAB"
-                                android:orientation="vertical"
-                                android:padding="3dp">
+                                android:text="Projeto criado em 9 de janeiro de 2023"
+                                android:textColor="#FFF"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/proximanovaregular"/>
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Meu Projeto 1"
-                                    android:textColor="#FFF"
-                                    android:textSize="16sp"
-                                    android:fontFamily="@font/proximanovabold"/>
+                        </LinearLayout>
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Projeto criado em 9 de janeiro de 2023"
-                                    android:textColor="#FFF"
-                                    android:textSize="12sp"
-                                    android:fontFamily="@font/proximanovaregular"/>
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -232,4 +228,6 @@
         </LinearLayout>
 
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
