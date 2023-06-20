@@ -59,11 +59,14 @@
             android:textSize="40sp" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30sp"
             android:padding="20sp"
+            android:onClick="onImageViewClicked"
+            android:contentDescription="Imagem 1"
             android:src="@drawable/grande" />
 
         <LinearLayout
@@ -74,10 +77,13 @@
             android:paddingRight="50dp">
 
             <ImageView
+                android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="20sp"
+                android:onClick="onImageViewClicked"
+                android:contentDescription="Imagem 2"
                 android:src="@drawable/pequeno1" />
 
             <TextView
@@ -86,10 +92,13 @@
                 android:layout_weight="1"/>
 
             <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="20sp"
+                android:onClick="onImageViewClicked"
+                android:contentDescription="Imagem 3"
                 android:src="@drawable/pequeno2" />
         </LinearLayout>
 
