@@ -46,11 +46,12 @@
 
                     <ImageView
                         android:id="@+id/im_terra"
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
+                        android:layout_width="241dp"
+                        android:layout_height="136dp"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="100dp"
+                        android:layout_marginBottom="140dp"
+                        android:layout_marginLeft="200dp"
                         android:src="@drawable/mundoceus" />
 
                     <LinearLayout
@@ -83,7 +84,9 @@
                             android:justificationMode="inter_word"
                             android:textColor="@color/white"
                             android:textFontWeight="400"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:layout_marginBottom="110dp"
+                            android:layout_marginRight="27dp"/>
 
                     </LinearLayout>
                 </RelativeLayout>
@@ -93,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.05"
-                android:src="@drawable/barralateral" />
+                android:src="@drawable/barralateral"
+                android:layout_marginRight="15dp"/>
         </LinearLayout>
         <TextView
             android:layout_marginTop="20dp"
