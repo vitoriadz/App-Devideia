@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mundo_das_ideias"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100">
+
+                    <ImageView
+                        android:id="@+id/iv_ceu"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_alignStart="@id/rl"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/mundoideias"
+                        tools:ignore="NotSibling" />
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="350dp"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="50dp"
+                        android:src="@drawable/mundoterra" />
+
+                    <ImageView
+                        android:id="@+id/im_terra"
+                        android:layout_width="241dp"
+                        android:layout_height="136dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="140dp"
+                        android:layout_marginLeft="200dp"
+                        android:src="@drawable/mundoceus" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/im_terra"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width='wrap_content'
+                            android:layout_height="wrap_content"
+                            android:height="38dp"
+                            android:fontFamily="@font/moredya_"
+                            android:paddingLeft="23dp"
+                            android:text="Mundo da Terra"
+                            android:textColor="@color/white"
+                            android:textFontWeight="400"
+                            android:textSize="32dp" />
+
+                        <TextView
+                            android:layout_width='match_parent'
+                            android:layout_height='wrap_content'
+                            android:fontFamily="@font/proximanovaregular"
+                            android:lineHeight="24dp"
+                            android:paddingLeft="23dp"
+                            android:text="O lar da concretude, onde os planos são mais do que apenas planos. É este o lugar onde você poderá ir além nas suas ideias."
+                            android:textAlignment="viewStart"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/white"
+                            android:textFontWeight="400"
+                            android:textSize="16dp"
+                            android:layout_marginBottom="110dp"
+                            android:layout_marginRight="27dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.05"
+                android:src="@drawable/barralateral"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arraste para cima"
+            android:textAlignment="center"
+            android:fontFamily="@font/proximanovaregular"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

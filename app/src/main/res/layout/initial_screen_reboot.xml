@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/initialscreenbackground">
+
+<ViewFlipper
+    android:id="@+id/viewFlipper"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:autoStart="true"
+    android:flipInterval="3000">
+
+    <LinearLayout
+        android:id="@+id/mundo_das_ideias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1000000">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoceus"
+                android:layout_weight="0.7"
+                android:paddingLeft="200dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoideias"
+                android:layout_weight="0.5"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoterra"
+                android:layout_weight="0.7"
+                android:paddingLeft="200dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width='wrap_content'
+                android:layout_height="wrap_content"
+                android:height="38dp"
+                android:fontFamily="@font/moredya"
+                android:paddingLeft="23dp"
+                android:text="Mundo das Ideias"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="32dp" />
+
+            <TextView
+                android:layout_width='match_parent'
+                android:layout_height='wrap_content'
+                android:fontFamily="@font/proximanovaregular"
+                android:lineHeight="24dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="64dp"
+                android:text="Um mundo para organizar os seus pensamentos com facilidade, sem medo deles se perderem entre as chuvas de asteróides e explosões estelares."
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arraste para cima"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mundo_da_terra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoideias"
+                android:layout_weight="0.7"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoterra"
+                android:layout_weight="0.5"
+                android:paddingLeft="200dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoceus"
+                android:layout_weight="0.7"
+                android:paddingLeft="200dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width='wrap_content'
+                android:layout_height="wrap_content"
+                android:height="38dp"
+                android:fontFamily="@font/moredya"
+                android:paddingLeft="23dp"
+                android:text="Mundo da Terra"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="32dp" />
+
+            <TextView
+                android:layout_width='match_parent'
+                android:layout_height='wrap_content'
+                android:fontFamily="@font/proximanovaregular"
+                android:lineHeight="24dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="64dp"
+                android:text="Um mundo para organizar os seus pensamentos com facilidade, sem medo deles se perderem entre as chuvas de asteróides e explosões estelares."
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arraste para cima"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mundo_dos_ceus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/initialscreenbackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoterra"
+                android:layout_weight="0.7"
+                android:paddingLeft="200dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoceus"
+                android:layout_weight="0.5"
+                android:paddingLeft="200dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mundoideias"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width='wrap_content'
+                android:layout_height="wrap_content"
+                android:height="38dp"
+                android:fontFamily="@font/moredya"
+                android:paddingLeft="23dp"
+                android:text="Mundo da Terra"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="32dp" />
+
+            <TextView
+                android:layout_width='match_parent'
+                android:layout_height='wrap_content'
+                android:fontFamily="@font/proximanovaregular"
+                android:lineHeight="24dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="64dp"
+                android:text="Um mundo para organizar os seus pensamentos com facilidade, sem medo deles se perderem entre as chuvas de asteróides e explosões estelares."
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textFontWeight="400"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arraste para cima"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ViewFlipper>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    android:src="@drawable/barralateral" />
+<!--        <StackView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            -->
+<!--        </StackView>-->
+</LinearLayout>

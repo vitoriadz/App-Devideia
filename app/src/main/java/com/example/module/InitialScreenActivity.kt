@@ -4,9 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 
-class MainActivity : AppCompatActivity() {
+class InitialScreenActivity : AppCompatActivity() {
     private lateinit var viewPager: VerticalViewPager
     private lateinit var pagerAdapter: VPagerAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.initial_screen)
